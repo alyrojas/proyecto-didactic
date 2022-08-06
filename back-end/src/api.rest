@@ -1,0 +1,50 @@
+###
+GET http://localhost:9000/temas
+
+###
+POST http://localhost:9000/temas
+Content-Type: application/json
+
+{
+    "cveArea": 2,
+    "nombre": "Aplicaciones Web",
+    "descripcion": "Aplicaciones web con angular"
+}
+
+###
+DELETE  http://localhost:9000/temas/4
+
+###
+PUT  http://localhost:9000/temas/5
+Content-Type: application/json
+
+{
+    "nombre": "Aplicaciones Web Back-end"
+}
+
+###
+GET http://localhost:9000/actividades
+
+###
+POST http://localhost:9000/actividades
+Content-Type: application/json
+
+{
+    "cveTema": 2,
+    "nombre": "Pruebas",
+    "contenido": "Pruebas unitarias",
+    "tipo": 1,
+    "valor": 50
+    
+}
+
+###
+DELETE  http://localhost:9000/actividades/2
+
+###
+PUT  http://localhost:9000/actividades/4
+Content-Type: application/json
+
+{
+    "valor": 100
+}
